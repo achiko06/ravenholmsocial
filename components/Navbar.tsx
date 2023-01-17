@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { AiOutlineLogout } from 'react-icons/ai';
+import { IoLogOutSharp } from 'react-icons/io5';
 import { BiSearch } from 'react-icons/bi';
 import { IoMdAdd } from 'react-icons/io';
 import { GoogleLogin, googleLogout  } from '@react-oauth/google';
@@ -94,7 +94,7 @@ const Navbar = () => {
                   removeUser();
                 }}
               >
-                <AiOutlineLogout color='red' fontSize={21} />
+                <IoLogOutSharp color='black' fontSize={21} />
               </button>
           </div>
         ) : (
