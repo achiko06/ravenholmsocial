@@ -17,7 +17,7 @@ interface IProps {
 
 interface IComment {
   comment: string;
-  length?: number;
+  length?: number; // to make optional add "?"
   _key: string;
   postedBy: { _ref?: string; _id?: string };
 }

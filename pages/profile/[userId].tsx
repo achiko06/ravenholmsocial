@@ -20,7 +20,7 @@ const Profile = ({ data }: IProps) => {
   const [showUserVideos, setShowUserVideos] = useState<Boolean>(true);
   const [videosList, setVideosList] = useState<Video[]>([]);
 
-  const { user, userVideos, userLikedVideos } = data;
+  const { user, userVideos, userLikedVideos } = data; // coming from /api/profile/id
   const videos = showUserVideos ? 'border-b-2 border-black' : 'text-gray-400';
   const liked = !showUserVideos ? 'border-b-2 border-black' : 'text-gray-400';
 

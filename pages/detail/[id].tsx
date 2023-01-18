@@ -58,7 +58,7 @@ const Detail = ({ postDetails }: IProps) => {
   };
 
   const addComment = async (e: { preventDefault: () => void }) => {
-    e.preventDefault();
+    e.preventDefault(); // to block reloading page after comment is posted
 
     if (userProfile) {
       if (comment) {
@@ -69,7 +69,7 @@ const Detail = ({ postDetails }: IProps) => {
         });
 
         setPost({ ...post, comments: res.data.comments });
-        setComment('');
+        setComment(''); // clear input field
         setIsPostingComment(false);
       }
     }

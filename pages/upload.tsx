@@ -22,8 +22,9 @@ const Upload = () => {
   const router = useRouter();
 
   useEffect(() => {
-    if (!userProfile) router.push('/');
+    if (!userProfile || userProfile._id !== '112479898353153734329') router.push('/');
   }, [userProfile, router]);
+  console.log(userProfile)
 
   const uploadVideo = async (e: any) => {
     const selectedFile = e.target.files[0];
